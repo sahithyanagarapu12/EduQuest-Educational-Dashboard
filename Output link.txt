@@ -1,0 +1,4 @@
+Output link(chrome):
+file:///C:/Users/Sahithya/OneDrive/Desktop/New%20folder/index.html
+Output link(edge):
+http://127.0.0.1:5500/

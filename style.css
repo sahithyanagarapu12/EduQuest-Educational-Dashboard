@@ -1,0 +1,98 @@
+/* --- Simple Pink Colors --- */
+:root {
+    --pink-light: #fce4ec; /* Very light pink background */
+    --pink-main: #e91e63; /* Deep pink for accents */
+    --pink-dark: #d81b60; /* Darker pink for hover */
+    --white-bg: #ffffff;
+    --text-color: #333333;
+}
+
+/* --- Basic Setup --- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--pink-light); /* Set the overall pink color */
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard {
+    max-width: 900px;
+    margin: 40px auto; /* Center the dashboard */
+    padding: 20px;
+}
+
+/* --- Header and Progress Bar --- */
+header {
+    background-color: var(--white-bg);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: var(--pink-main);
+    margin-bottom: 15px;
+}
+
+.progress-bar-container {
+    height: 20px;
+    background-color: #f8bbd0; /* Light pink bar track */
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: var(--pink-main); /* Deep pink progress fill */
+    width: 0%; /* JS will change this */
+    transition: width 0.5s ease-in-out;
+}
+
+#progress-text {
+    font-weight: bold;
+    color: var(--pink-main);
+}
+
+/* --- Lesson Cards Layout --- */
+.lesson-list h2 {
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.lessons-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Auto-layout for cards */
+    gap: 20px;
+}
+
+.lesson-card {
+    background-color: var(--white-bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid var(--pink-main); /* Nice pink accent bar */
+}
+
+.lesson-card h3 {
+    color: var(--pink-dark);
+    margin-bottom: 10px;
+}
+
+/* Button Styling */
+.start-button {
+    background-color: var(--pink-main);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.start-button:hover {
+    background-color: var(--pink-dark);
+}
